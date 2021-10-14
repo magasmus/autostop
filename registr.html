@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rejestracja SleepStop </title>
+	<meta charset="utf-8">
+	<meta name="author" content="Asmus" >
+	<meta name="keywords" content="autostop, auto stop, auto-stop, na stopa, stopem, podróżowanie, nocleg, miejsce do spania, łóżko, dla ustostopowicza, dla autostopowiczki, stopem, kwatera, zakwaterowanie, schronisko, pensjonat, hostel, dla autostopowiczów, dla autostopowiczek">
+	<meta name="description" content=" Serwis dla autostopowiczów i innych osób podóżujących po Polsce. Daje możliwość udostępnienia i wyszukania miejsca noclegowego w najbliższej okolicy. Oferowane noclegi mogą być płatne lub darmowe jednak bardziej preferowana jest druga opcja. Umożliwia poznawanie nowych ciekawych osób i pomoc im.">
+	<link rel="stylesheet" type="text/css" href="amelia.css">
+	<link rel="alternate stylesheet" type="text/css" href="contrast.css" title="contrast">
+	<link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link rel="alternate stylesheet" type="text/css" href="size.css" title="size">
+	<script type="text/javascript">
+
+		function setActiveStyleSheet(title, reset) {
+		var i, a, main;
+		for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+		a.disabled = true;
+		if(a.getAttribute("title") == title) a.disabled = false;
+		}
+		}
+		}
+		
+	</script>
+
+
+</head>
+
+<body>
+	<div class="container">
+
+	<header>
+		<a href="index.html"><h1 id="logo">SleepStop</h1></a>
+		<div id="top" >
+			<a href="javascript:setActiveStyleSheet('', 1);" title="czcionka standart"><img class="oko" src="a.png"></a>
+
+			<a href="javascript:setActiveStyleSheet('size', 1);" title="czcionka powiększona"> <img class="oko" src="aa.png"></a>
+
+
+
+			<a href="javascript:setActiveStyleSheet('', 1);" title="kontrast podstawowy"><img class="oko" src="okob.png"></a>
+
+			<a href="javascript:setActiveStyleSheet('contrast', 1);" title="kontrast żółto-czarny"><img class="oko" src="okoz.png"></a>
+		</div>
+
+		<nav>
+			<ul class="grey" class="nawigacja">
+				<!-- ma byc widoczne tylko dla zalogowanych -->
+				<a href="newbed.html"><li>DODAJ NOCLEG</li></a> 
+				<a href="search.html"><li>WYSZUKIWARKA NOCLEGÓW</li></a>
+				<li>ZAREJESTRUJ SIĘ</li>
+				<a href="login.html"><li>ZALOGUJ</li></a>
+			</ul>
+		</nav>
+    </header>
+
+<!-- <div class="container"> -->
+	<section class="nexttofoto" class="grey" class="formularz">
+	 
+
+		<h2>Zarejestruj się na SleepStop:</h2>
+		<form action="" method="get/post" id="formm">
+			<fieldset>
+				<legend>Dane osobowe</legend>
+			<div >
+				<p ><label >Login*: <input class="window" type="text" name="username"></label></p>
+			</div>
+			<div>
+				<p><label>Imię*:<input class="window" type="text" name="name"></label></p>
+			</div>
+			<div>
+				<p><label>Nazwisko*:<input class="window" type="text" name="surname"></label></p>
+			</div>
+			<div>
+				<p><label>Adres e-mail*:<input class="window" type="email" name="mail"></label></p>
+			</div>
+			<div>
+				<p><label>Telefon:<input class="window" type="text" name="tel"></label></p>
+			</div>
+			<div>
+				<p><label>Hasło*:<input class="window" type="password" name="1"></label></p>
+			</div>
+			<div>
+				<p><label>Powtórz hasło*:<input class="window" type="password" name=""></label></p>
+			</div>
+			<div>
+				<p><label>Wiek:<input class="window" type="number" name="age" min="18"></label></p><br>
+			</div>
+			<div>
+				<p>Płeć: <br>
+					<label><input type="radio" name="gender" value="women" >kobieta</label>
+					<label><input type="radio" name="gender" value="man" >mężczyzna</label>
+					<label><input type="radio" name="gender" value="other" >inne</label><br />
+					<label><input type="radio" name="gender" value="no" >nie chcę deklarować</label>
+				</p>
+			</div><br>
+		</fieldset>
+		<fieldset>
+			<legend>Ankieta</legend>	
+			<div>
+				<p>Skąd się o nas dowiedzialeś:<br> 
+					<label><input type="radio" name="how" value="net"> internet</label>
+					<label><input type="radio" name="how" value="friends"> znajomi</label>
+					<label><input type="radio" name="how" value="other"> inne</label> </p>
+			</div><br>
+		</fieldset>
+			
+			<div>
+				<p id="term"><input id="terms" type="checkbox" name="regulamin">
+				<label for="terms"> *Akceptuję regulamin i warunki korzystania z portalu </label> </p>
+			</div><br>
+
+		
+	
+			<input type="submit" value="Rejestruj">
+		
+		<p id="obligatory">* Pole wymagane</p>
+	
+	
+	
+		
+			
+		</form>
+	</fieldset>	
+	</section>
+
+
+
+
+
+	<section class="foto" id="foto2">
+		<hgroup >
+			<h1 class="grey"> Świetnie !!!</h1>
+			<h2 class="grey">Po rejestracji będziesz mógł zostać jednym z naszych gospodarzy</h2>
+		</hgroup>
+	</section>
+</div>
+	<p class="push"></p>
+
+
+	<footer class="white">
+		<p>copyright &copy 2017 Asmus</br> All Rights Reserved </p>
+
+
+	</footer>
+		
+
+</body>
+
+</html>
